@@ -1629,9 +1629,11 @@ pre .javascript .function {
 }
 #qr {
   padding-top: 20px;
-/*& > div:hover p {
+/*
+    & > div:hover p {
       animation: roll 0.1s infinite linear;
-    }*/
+    }
+    */
 }
 #qr a {
   border: 0;
@@ -1822,7 +1824,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4ab055;
+  background: #fffe4e;
 }
 .feed-link,
 .chat {
