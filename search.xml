@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[HTML 基础笔记]]></title>
+    <url>%2F2019%2F07%2F16%2Fhtml%2F</url>
+    <content type="text"><![CDATA[HTML基础教程HTML简介 什么是HTMLHTML是用来描述网页的一种语言。 HTML指的是超文本标记语言：HyperText Markup Language HTML 不是一种编程语言，而是一种标记语言 标记语言是一套标记标签(markup tag) HTML 使用标记标签来描述网页 HTML 文档包含了HTML标签及文本内容 HTML 文档也叫web 页面 HTML实例1234567891011121314&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;title&gt;刘文凯(https://lklk778877.github.io)&lt;/title&gt;&lt;/head&gt;&lt;body&gt; &lt;h1&gt;我的第一个标题&lt;/h1&gt; &lt;p&gt;我的第一个段落。&lt;/p&gt; &lt;/body&gt;&lt;/html&gt; &lt;!DOCTYPE html&gt; 声明为HTML5文档 &lt;html&gt; 元素是HTML页面的根元素 &lt;head&gt; 元素包含了文档的元 (meta) 数据,如&lt;meta charset=&quot;utf-8&quot;&gt; 定义网页编码格式为 utf-8。 &lt;title&gt; 元素描述了文档的标题 &lt;body&gt; 元素包含了可见的页面内容 &lt;h1&gt; 元素定义一个大标题 &lt;p&gt; 元素定义一个段落 HTML 标签HTML 标记标签通常被称为 HTML 标签 ( HTML tag). HTML 标签是由 尖括号 包围的关键字，比如 &lt;title&gt; HTML 标签通常是成对出现的，比如 &lt;html&gt; 和 &lt;/html&gt; 标签对中的第一个标签是开始标签，第二个标签时结束标签 开始和结束标签也被称为开放标签和闭合标签 &lt;标签&gt;内容&lt;/标签&gt; HTML 元素“HTML 标签” 和 “HTML 元素” 通常都是描述同样的意思.但是严格来讲, 一个 HTML 元素包含了开始标签与结束标签，如下实例： HTML 元素: &lt;h1&gt;这是一个大标签&lt;/h1&gt; Web 浏览器Web浏览器（如谷歌浏览器，Internet Explorer，Firefox，Safari）是用于读取HTML文件，并将其作为网页显示。 浏览器并不是直接显示的HTML标签，但可以使用标签来决定如何展现HTML页面的内容给用户： HTML 网页结构下面是一个可视化的网页结构： 只有&lt;body&gt;区域才会在浏览器中显示 HTML 版本从初期的网络诞生后，已经出现了许多HTML版本: 版本 发布时间 HTML 1991 HTML + 1993 HTML 2.0 1995 HTML 3.2 1997 HTML 4.01 1999 XHTML 1.0 2000 HTML5 2012 XHTML5 2013 HTML编辑器可以使用以下编辑器编辑 HTML ： Sublime Text VS Code 每种操作系统都带有简单的文本编辑器： Windows 用户可以使用记事本 Linux 用户可以选择几种不同的文本编辑器，如 vi、vim 或者 emacs ; Mac 用户可以使用 OS X 预装的 TextEdit。 HTML 元素HTML 文档由 HTML 元素定义 开始标签 元素内容 结束标签 &lt;p&gt; 这是一个段落 &lt;/p&gt; &lt;a href=&quot;liuwenkai.html&quot;&gt; 这是一个链接 &lt;/a&gt; &lt;br&gt; 换行 开始标签常被称为起始标签(opening tag),结束标签常被称为闭合标签(closing tag)。 HTML 元素语法 HTML 元素以开始标签起始，以结束标签终止 元素的内容是开始标签与结束标签之间的内容 某些 HTML 元素具有空内容 空元素在开始标签中进行关闭 大多数 HTML 元素拥有属性 嵌套的 HTML 元素HTML 文档由嵌套的 HTML 元素构成。 HTML 空元素没有内容的 HTML 元素被称为空元素。空元素是在开始标签中关闭的。&lt;br&gt;就是没有关闭标签的空元素(&lt;br&gt;标签定义换行)。在 XHTML、XML 以及未来版本的 HTML 中，所有元素都必须被关闭。在开始标签中添加斜杠，比如 &lt;br/&gt;，是关闭空元素的正确方法， HTML、XHTML 和 XML 都接受这种方式。 HTML 使用小写标签HTML 标签对大小写不敏感：&lt;p&gt; 等同于 &lt;P&gt; 。万维网联盟(W3C) 在 HTML 4 中推荐使用小写，未来 (X)HTML 版本中强制使用小写。 HTML 属性属性是HTML的附加信息 HTML 元素可以设置属性 属性可以在元素中添加信息 属性一般描述于开始信息 属性总是以 名称/值 的形式出现，如： name=”value” 链接属性： &lt;a href=&quot;liuwenkai.github.io&quot;&gt; 这是一个链接 &lt;/a&gt; 属性 描述 class 为html元素定义一个或多个类名（classname）(类名从样式文件引入) id 定义元素的唯一id style 规定元素的行内样式 title 描述元素的额外信息 accesskey 设置访问元素的键盘快捷键 contenteditableNew 规定是否可编辑元素的内容 contextmenuNew 指定一个元素的上下文菜单。当用户右击该元素，出现上下文菜单 data-*New 用于存储页面的自定义数据 dir 设置元素中内容的文本方向。 draggableNew 指定某个元素是否可以拖动 dropzoneNew 指定是否将数据复制，移动，或链接，或删除 hiddenNew hidden 属性规定对元素进行隐藏。 lang 设置元素中内容的语言代码。 spellcheckNew 检测元素是否拼写错误 tabindex 设置元素的 Tab 键控制次序。 translateNew 指定是否一个元素的值在页面载入时是否需要翻译 HTML 标题标题通过 &lt;h1&gt;-&lt;h6&gt; 标签定义。&lt;h1&gt;定义最大的标签，&lt;h6&gt;定义最小的标签。浏览器会自动在标题的前后添加空行。搜索引擎使用标题为您的网页的结构和内容编制索引。 HTML 水平线 &lt;hr /&gt;标签创建水平线 HTML 注释 &lt;!-- 这是注释 --&gt; HTML 段落段落通过 &lt;p&gt;标签定义。 &lt;p&gt; 这是一个段落 &lt;/p&gt; 浏览器会自动在段落前后添加空行。( &lt;p&gt; 是块级元素) HTML 换行 &lt;br/&gt;]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[刘文凯]]></title>
     <url>%2F2019%2F07%2F16%2F%E5%88%98%E6%96%87%E5%87%AF%2F</url>
     <content type="text"><![CDATA[测试刘文凯没事干12hexo generatehexo date 真没事干 刘文凯真闲123456789&lt;&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;刘文凯真闲&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt; 真闲]]></content>
@@ -10,17 +21,6 @@
       <tags>
         <tag>导航</tag>
         <tag>分享</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[HTML 基础笔记]]></title>
-    <url>%2F2019%2F07%2F16%2Fhtml%2F</url>
-    <content type="text"><![CDATA[HTML基础教程HTML简介 什么是HTMLHTML是用来描述网页的一种语言。 HTML指的是超文本标记语言：HyperText Markup Language HTML 不是一种编程语言，而是一种标记语言 标记语言是一套标记标签(markup tag) HTML 使用标记标签来描述网页 HTML 文档包含了HTML标签及文本内容 HTML 文档也叫web 页面 HTML实例1234567891011121314&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;title&gt;刘文凯(https://lklk778877.github.io)&lt;/title&gt;&lt;/head&gt;&lt;body&gt; &lt;h1&gt;我的第一个标题&lt;/h1&gt; &lt;p&gt;我的第一个段落。&lt;/p&gt; &lt;/body&gt;&lt;/html&gt; &lt;!DOCTYPE html&gt; 声明为HTML5文档 &lt;html&gt; 元素是HTML页面的根元素 &lt;head&gt; 元素包含了文档的元 (meta) 数据,如&lt;meta charset=&quot;utf-8&quot;&gt; 定义网页编码格式为 utf-8。 &lt;title&gt; 元素描述了文档的标题 &lt;body&gt; 元素包含了可见的页面内容 &lt;h1&gt; 元素定义一个大标题 &lt;p&gt; 元素定义一个段落 HTML 标签HTML 标记标签通常被称为 HTML 标签 ( HTML tag). HTML 标签是由 尖括号 包围的关键字，比如 &lt;title&gt; HTML 标签通常是成对出现的，比如 &lt;html&gt; 和 &lt;/html&gt; 标签对中的第一个标签是开始标签，第二个标签时结束标签 开始和结束标签也被称为开放标签和闭合标签 &lt;标签&gt;内容&lt;/标签&gt; HTML 元素“HTML 标签” 和 “HTML 元素” 通常都是描述同样的意思.但是严格来讲, 一个 HTML 元素包含了开始标签与结束标签，如下实例： HTML 元素: &lt;h1&gt;这是一个大标签&lt;/h1&gt; Web 浏览器Web浏览器（如谷歌浏览器，Internet Explorer，Firefox，Safari）是用于读取HTML文件，并将其作为网页显示。 浏览器并不是直接显示的HTML标签，但可以使用标签来决定如何展现HTML页面的内容给用户： HTML 网页结构下面是一个可视化的网页结构： 只有&lt;body&gt;区域才会在浏览器中显示 HTML 版本从初期的网络诞生后，已经出现了许多HTML版本: 版本 发布时间 HTML 1991 HTML + 1993 HTML 2.0 1995 HTML 3.2 1997 HTML 4.01 1999 XHTML 1.0 2000 HTML5 2012 XHTML5 2013 HTML编辑器可以使用以下编辑器编辑 HTML ： Sublime Text VS Code 每种操作系统都带有简单的文本编辑器： Windows 用户可以使用记事本 Linux 用户可以选择几种不同的文本编辑器，如 vi、vim 或者 emacs ; Mac 用户可以使用 OS X 预装的 TextEdit。 HTML 元素HTML 文档由 HTML 元素定义 开始标签 元素内容 结束标签 &lt;p&gt; 这是一个段落 &lt;/p&gt; &lt;a href=&quot;liuwenkai.html&quot;&gt; 这是一个链接 &lt;/a&gt; &lt;br&gt; 换行 开始标签常被称为起始标签(opening tag),结束标签常被称为闭合标签(closing tag)。 HTML 元素语法 HTML 元素以开始标签起始，以结束标签终止 元素的内容是开始标签与结束标签之间的内容 某些 HTML 元素具有空内容 空元素在开始标签中进行关闭 大多数 HTML 元素拥有属性 嵌套的 HTML 元素HTML 文档由嵌套的 HTML 元素构成。 HTML 空元素没有内容的 HTML 元素被称为空元素。空元素是在开始标签中关闭的。&lt;br&gt;就是没有关闭标签的空元素(&lt;br&gt;标签定义换行)。在 XHTML、XML 以及未来版本的 HTML 中，所有元素都必须被关闭。在开始标签中添加斜杠，比如 &lt;br/&gt;，是关闭空元素的正确方法， HTML、XHTML 和 XML 都接受这种方式。 HTML 使用小写标签HTML 标签对大小写不敏感：&lt;p&gt; 等同于 &lt;P&gt; 。万维网联盟(W3C) 在 HTML 4 中推荐使用小写，未来 (X)HTML 版本中强制使用小写。 HTML 属性属性是HTML的附加信息 HTML 元素可以设置属性 属性可以在元素中添加信息 属性一般描述于开始信息 属性总是以 名称/值 的形式出现，如： name=”value” 链接属性： &lt;a href=&quot;liuwenkai.github.io&quot;&gt; 这是一个链接 &lt;/a&gt; 属性 描述 class 为html元素定义一个或多个类名（classname）(类名从样式文件引入) id 定义元素的唯一id style 规定元素的行内样式 title 描述元素的额外信息 accesskey 设置访问元素的键盘快捷键 contenteditableNew 规定是否可编辑元素的内容 contextmenuNew 指定一个元素的上下文菜单。当用户右击该元素，出现上下文菜单 data-*New 用于存储页面的自定义数据 dir 设置元素中内容的文本方向。 draggableNew 指定某个元素是否可以拖动 dropzoneNew 指定是否将数据复制，移动，或链接，或删除 hiddenNew hidden 属性规定对元素进行隐藏。 lang 设置元素中内容的语言代码。 spellcheckNew 检测元素是否拼写错误 tabindex 设置元素的 Tab 键控制次序。 translateNew 指定是否一个元素的值在页面载入时是否需要翻译 HTML 标题标题通过 &lt;h1&gt;-&lt;h6&gt; 标签定义。&lt;h1&gt;定义最大的标签，&lt;h6&gt;定义最小的标签。浏览器会自动在标题的前后添加空行。搜索引擎使用标题为您的网页的结构和内容编制索引。 HTML 水平线 &lt;hr /&gt;标签创建水平线 HTML 注释 &lt;!-- 这是注释 --&gt; HTML 段落段落通过 &lt;p&gt;标签定义。 &lt;p&gt; 这是一个段落 &lt;/p&gt; 浏览器会自动在段落前后添加空行。( &lt;p&gt; 是块级元素) HTML 换行 &lt;br/&gt;]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
       </tags>
   </entry>
   <entry>
